@@ -1,0 +1,9 @@
+modelo,variables,past,outputs,ramas,arquitectura,tipo_salida,capas,parametros,parametros_entrenables,parametros_no_entrenables,epochs,tiempo_s
+modelo_gru_univariante,1,5,1,1,GRU 64→64,Directa,5,37892,37889,3,160,89.644054
+modelo_gru,26,14,3,1,GRU 64→64,Directa,5,42872,42819,53,23,25.712860
+modelo_conv_lstm,26,14,3,1,Conv 64→32→32 + LSTM 128→128→64,Directa,19,284088,284035,53,35,83.279277
+modelo_conv_gru,26,14,3,1,Conv 64→32 + GRU 128→128,Directa,15,182872,182819,53,18,34.667074
+modelo_residual_gru,26,14,3,1,Conv 64→32 + GRU 128→128,Residual,18,182872,182819,53,13,26.285889
+modelo_residual_lstm,26,14,3,1,Conv 64→32 + LSTM 128→128,Residual,18,235608,235555,53,13,27.496341
+modelo_dos_ramas,26,14,3,2,Serie: Conv 32→32 + GRU 64→32 | Derivadas: Conv 64→32 + LSTM 96→64,Unión ponderada α,34,144895,144841,54,14,50.081449
+modelo_dos_ramas_ampliado,26,14,3,2,Serie: Conv 64→32→16 + GRU 64→32 | Derivadas: Conv 96→64→64 + LSTM 96→64→32,Unión ponderada α,44,206223,206169,54,23,98.877040

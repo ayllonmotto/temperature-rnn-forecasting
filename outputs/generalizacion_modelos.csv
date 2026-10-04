@@ -1,0 +1,8 @@
+Ranking proximidad,modelo,best_epoch,epochs,train_mae,val_mae,gap_mae,gap_abs_mae,Modelo
+1,modelo_residual_lstm,3,13,2.107195,2.103554,-0.003641,0.003641,Conv1D + LSTM residual
+2,modelo_residual_gru,3,13,2.098416,2.110163,0.011747,0.011747,Conv1D + GRU residual
+3,modelo_conv_lstm,25,35,2.064469,2.036430,-0.028039,0.028039,Conv1D + LSTM
+4,modelo_gru,13,23,2.068072,2.099837,0.031766,0.031766,GRU
+5,modelo_conv_gru,8,18,2.043487,2.086272,0.042786,0.042786,Conv1D + GRU
+6,modelo_dos_ramas_ampliado,13,23,2.098779,2.003362,-0.095417,0.095417,Dos ramas ampliadas · serie + derivadas
+7,modelo_dos_ramas,4,14,2.161031,2.011770,-0.149262,0.149262,Dos ramas · serie + derivadas

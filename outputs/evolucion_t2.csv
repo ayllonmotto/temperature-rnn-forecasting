@@ -1,0 +1,9 @@
+Modelo,Entrada,Variables,Past,Objetivos,MSE test · t+2,RMSE test · t+2,MAE test · t+2
+GRU univariante,Serie de temperatura,1,5,t+2,6.960493,2.638275,2.066219
+GRU,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.204769,2.490937,1.942699
+Conv1D + LSTM,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.044530,2.458563,1.912064
+Conv1D + GRU,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.111679,2.472181,1.938501
+Conv1D + GRU residual,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.464552,2.542548,1.958750
+Conv1D + LSTM residual,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.438181,2.537357,1.974463
+Dos ramas · serie + derivadas,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.056552,2.461006,1.899688
+Dos ramas ampliadas · serie + derivadas,Temperatura + 25 variables derivadas,26,14,t+1 · t+2 · t+3,6.034581,2.456538,1.901451
